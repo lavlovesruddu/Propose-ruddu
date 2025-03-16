@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Timeline ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="translucent-box">
+        <h2>A Timeline of Our Love Story ❤️</h2>
+        <div class="timeline">
+            <div class="event" onclick="showNote('It all started on the bus, you were teaching me chemistry, explaining concepts with that soft, mesmerizing voice of yours. But honestly, I wasn’t paying attention to chemistry—I was lost in you. The way you spoke, the way your eyes lit up while explaining… at that moment, I knew you were different. Even before we talked, I used to sit behind you, quietly admiring you from afar. I never had the courage to speak, but that day, fate decided to bring us closer. That first conversation was not just about chemistry—it was the beginning of our chemistry ')">
+                <h3>🚌 First Conversation</h3>
+                <p>Bus - Chemistry Class</p>
+            </div>
+            <div class="event" onclick="showNote('A moment that still makes my heart race. I still remember that day, i took you from school. You were sitting behind me on the scooty, holding on, just like always. The air was filled with something special, something unspoken. I asked you if we should do that i was uncertain of the answer but it was the best feeling when you said yes we can kiss , then we went to that place where we kissed i remember that so well and then, it happened—our first kiss. Right there, on the scooty. It wasn’t just a kiss; it was a promise, an unspoken vow that we belonged together. Even now, every time I ride the scooty, I can still feel you there, as if time never moved forward from that perfect moment.Our first kiss was magical, right there on the scooty! 💋')">
+                <h3>💋 First Kiss</h3>
+                <p>On the Scooty</p>
+            </div>
+            <div class="event" onclick="showNote('🎬 A movie, a song, and a moment I’ll never forget. Our first movie date was supposed to be just a simple outing, but it turned into something unforgettable.  Watching Animal together, I could feel your emotions through every scene. But then came Satranga—that song changed everything. I looked at you, and you had tears in your eyes. When I asked why, your answer hit me deep: (I cried because I was scared of losing you). In that moment, I realized just how much you loved me, how deeply you felt for me. It wasn’t just a movie; it was a moment where I truly saw your heart, and I knew—I never wanted to be without you')">
+                <h3>🎬 First Movie Date</h3>
+                <p>Animal - Satranga Moment</p>
+            </div>
+            <div class="event" onclick="showNote('The day when i submitted myself to you. You came at my place we were listening to songs and cuddling teri galliyan song was playing and idk what happened but at that time a thought came to my mind that if you left me then what will happen and just by that thought i was so in sadness. I could never afford to loose you. And you at that time my Pyaari Ruddu you cheered me up plating Humma Humma Songs i was just so happy and grateful to god that you came to my life. How could i not love you?')">
+                <h3>Songs & Us 🎶❤️</h3>
+                <p>Sadness & Love</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="note-box" class="note-box">
+        <p id="note-text"></p>
+        <button onclick="closeNote()">Close</button>
+    </div>
+
+    <a href="index.html" class="home-btn">🏠 Home</a>
+
+    <script>
+        function showNote(message) {
+            document.getElementById('note-text').innerText = message;
+            document.getElementById('note-box').style.display = 'block';
+        }
+
+        function closeNote() {
+            document.getElementById('note-box').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+<div class="button-container">
+    
+    <button class="miss-btn" onclick="window.location.href='miss.html'">Wanna See the Things I Miss About You? 💕</button>
+</div>
